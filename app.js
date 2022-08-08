@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 
 server.use(express.json());
-server.use(express.static('public'));
+server.use(express.static('./public'));
 //вопрос зачем используют
 // Тем не менее, путь, переданный в функцию express.static, указан относительно каталога, 
 //из которого запускается процесс node. В случае запуска приложения Express из другого каталога, 
